@@ -1,0 +1,16 @@
+body {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 30px;
+}
+
+.high-priority {
+  background-color: red;
+}
+
+.low-priority {
+  background-color: green;
+}
+
+.new-task-form {
+  display: inline-block;
+}
