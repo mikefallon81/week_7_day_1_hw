@@ -10,14 +10,19 @@
   <body>
     <div id="app">
       <form class="new-task-form" @submit="saveNewTask">
-        <label for="">Task Name</label>
-        <input type="text" v-model="newTask" required>
-        <input type="radio" name="priority" value="false" v-model="newPriority" required>Low
-        <input type="radio" name="priority" value="true" v-model="newPriority">High
+        <div>
+          <label for="">Task Name:</label>
+            <input type="text" v-model="newTask" required>
+          </div>
+          <div>
+            <label for="">Priority:</label>
+            Low<input type="radio" name="priority" value="false" v-model="newPriority" required>
+            High<input type="radio" name="priority" value="true" v-model="newPriority">
+        </div>
         <input type="submit">
       </form>
       <ul>
-        <li v-for="(item, index) in items" :class="item.priority === 'true' ? 'high-priority' : 'low-priority'">
+        <li class="tasks" v-for="(item, index) in items" :class="item.priority === 'true' ? 'high-priority' : 'low-priority'">
           {{item.task}}
           <button @click="deleteTask( index )">Delete</button>
         </li>

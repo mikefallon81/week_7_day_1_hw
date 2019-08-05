@@ -1,6 +1,6 @@
 body {
   font-family: 'Fjalla One', sans-serif;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .high-priority {
@@ -13,4 +13,62 @@ body {
 
 .new-task-form {
   display: inline-block;
+}
+
+input {
+
+}
+
+input[type=text]{
+  width: 130px;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+
+input[type=radio]{
+  margin-left: 10px;
+
+}
+
+input[type=submit]{
+  background-color: ;
+  width: 125px;
+  font-size: 18px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+
+li {
+  list-style-type:lower-roman;
+  margin-bottom: 10px;
+  height: 75px;
+  border-style: double;
+  display: flex;
+	justify-content: space-between;
+
+}
+
+li.tasks {
+  display: flex;
+  justify-content: space-between;
+}
+
+li button {
+
+  /* float: right; */
+  width: 100px;
+  margin: 7px;
+  font-size: 18px;
+  vertical-align: middle;
+
+}
+
+li button:hover {
+  
 }
